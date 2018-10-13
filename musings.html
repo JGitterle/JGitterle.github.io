@@ -1,35 +1,47 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
 <head>
-  <title>musings</title>
+  <title>Calculator</title>
   <link rel="stylesheet" href="stylesheet.css">
-</head>
 
+</head>
+<script>
+function x_plus_y() {
+  var min = 5;
+var max = 10;
+var x = Math.floor(Math.random() * (max - min)) + min;
+
+  var y = prompt ("Enter y:");
+
+  z = (x) + (y);
+  alert("x + y = " + z );
+}
+</script>
 <body>
 
 <!-- Site navigation menu -->
 <ul class="navbar">
-  <li><a href="index.html">Home page</a>
-  <li><a href="musings.html">Musings</a>
-  <li><a href="town.html">My town</a>
-  <li><a href="links.html">Links</a>
+  <li><a href="musings.html">Randomgenerator</a>
+
+  <li><a href="links.html">Foresee EPIN1020 course grade</a>
 </ul>
 
 <!-- Main content -->
-<h1>musings</h1>
+<h1>Calculator</h1>
 
-<p>Welcome to my styled page!
+<p>Welcome to my personal calculator</p>
 
-<p>It lacks images, but at least it has style.
-And it has links, even if they don't go
-anywhere&hellip;
+<p>It lacks sense, but at least it is weird
+<br>
+You just have to enter variable y. The result is the combination of a randomly
+<br>
+generated number of the intervall [5;10] with your personal input.</p>
 
-<p>There should be more here, but I don't know
-what yet.
+<p>Try it out and have fun!</p>
 
 <!-- Sign and date the page, it's only polite! -->
-<address>Made 5 April 2004<br>
+<address>Made 12 October 2018<br>
   by myself.</address>
-
+<button onclick="x_plus_y()">Click me to add random number with your input</button>
 </body>
 </html>
