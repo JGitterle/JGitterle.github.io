@@ -13,8 +13,12 @@ var x = Math.floor(Math.random() * (max - min)) + min;
 
   var y = prompt ("Enter y:");
 
-  z = (x) + (y);
-  alert("x + y = " + z );
+  var z = (x) + (y);
+
+  var t = document.getElementById("number");
+  t.style.fontSize = "20px"
+  t.style.color="black"
+  document.getElementById("number").innerHTML = "Your personal number added to a randomly generated number is " + (z)
 }
 </script>
 <body>
@@ -38,6 +42,8 @@ You just have to enter variable y. The result is the combination of a randomly
 generated number of the intervall [5;10] with your personal input.</p>
 
 <p>Try it out and have fun!</p>
+<br>
+<p id="number"></p>
 
 <!-- Sign and date the page, it's only polite! -->
 <address>Made 12 October 2018<br>
