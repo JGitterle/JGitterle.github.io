@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Grade Tracker</title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="stylesheet.css">
 
 </head>
@@ -15,36 +15,77 @@ var z = document.getElementById("result");
 z.style.fontSize = "30px"
 z.style.color="black"
 document.getElementById("result").innerHTML = "Your grade is:" + (u)
-
+}
+function xy(){
+var x = document.getElementById("myForm").elements[0].value;
+var u = (" You failed ") + (x);
+var z = document.getElementById("result");
+z.style.fontSize = "30px"
+z.style.color="black"
+document.getElementById("result").innerHTML = "Your grade is:" + (u)
 
 }
+
+
 </script>
 <body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Assignment 3</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="musings.html">Randomgenerator</a></li>
+        <li class="active"><a href="links.html">Foresee EPIN1020 course grade</a></li>
+      </div>
+      </ul>
+    </div>
+  </nav>
+<div class="container">
+
+  <div class="row">
+  <div class="col-sm-9">
+        <div class="xy">
+        <h1>Grade tracker</h1>
+
+        <p>Welcome to something unique</p>
+
+        <p id="result"></p>
+
+        <p>Ever wondered how to look up your grades for your assignments?
+        <br>
+        Here you are! Don't be afraid of getting disappointed.
+        <br>
+        </p>
+
+        <p>Try it out!</p>
+
+        <!-- Sign and date the page, it's only polite! -->
+        <address>Made 12 October 2018<br>
+          by myself.</address>
+      <form id="myForm">
+            Enter Assignment 2<br>
+            <input type="text" name="firstname" value="">
+            <br>
+            <button type="button" class="btn btn-info" onclick="xy()">Do you dare?</button>
+
+      </form>
+
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+
+      <img class="img-responsive" src="CUHK.jpg" alt="image">
+
+    </div>
+</div>
+</div>
+
 
 <!-- Site navigation menu -->
-<ul class="navbar">
-  <li><a href="musings.html">Randomgenerator</a>
-
-  <li><a href="links.html">Foresee EPIN1020 course grade</a>
-</ul>
 
 <!-- Main content -->
-<h1>Grade tracker</h1>
 
-<p>Welcome to something unique</p>
-
-<p id="result">Ever wondered how to look up your grades for your assignments?
-<br>
-Here you are! Don't be afraid of getting disappointed.
-<br>
-</p>
-
-<p>Try it out!</p>
-
-<!-- Sign and date the page, it's only polite! -->
-<address>Made 12 October 2018<br>
-  by myself.</address>
-
-<button type="button" class="btn btn-dark" onclick="x_plus_y()">Do you dare?</button>
 </body>
 </html>

@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Calculator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="stylesheet.css">
   <link rel="myfunctions" href="myfunctions.js">
 </head>
@@ -20,34 +21,75 @@ var x = Math.floor(Math.random() * (max - min)) + min;
   t.style.color="black"
   document.getElementById("number").innerHTML = "Your personal number added to a randomly generated number is " + (z)
 }
+function xy(){
+  var min = 5;
+var max = 10;
+var y = Math.floor(Math.random() * (max - min)) + min;
+var x = document.getElementById("myForm").elements[0].value;
+var z = (x) + (y)
+var t = document.getElementById("number");
+t.style.fontSize = "20px"
+t.style.color="black"
+document.getElementById("number").innerHTML = "Your personal number added to a randomly generated number is " + (z)
+}
 </script>
 <body>
 
 <!-- Site navigation menu -->
-<ul class="navbar">
-  <li><a href="musings.html">Randomgenerator</a>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Assignment 3</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="musings.html">Randomgenerator</a></li>
+      <li><a href="links.html">Foresee EPIN1020 course grade</a></li>
+    </div>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+      <div class="xy">
+        <h1>Calculator</h1>
 
-  <li><a href="links.html">Foresee EPIN1020 course grade</a>
-</ul>
+        <p>Welcome to my personal calculator</p>
+
+        <p>It lacks sense, but at least it is weird
+        <br>
+        You just have to enter variable y. The result is the combination of a randomly
+        <br>
+        generated number of the intervall [5;10] with your personal input.</p>
+
+        <p>Try it out and have fun!</p>
+        <br>
+        <p id="number"></p>
+
+        <!-- Sign and date the page, it's only polite! -->
+        <address>Made 12 October 2018<br>
+          by myself.</address>
+          <form id="myForm">
+                Enter your personal number<br>
+                <input type="text" name="firstname" value="">
+                <br>
+                <button type="button" class="btn btn-info" onclick="xy()">Click me to add random number with your input</button>
+
+          </form>
+
+
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+
+      <img class="img-responsive" src="CUHK.jpg" alt="image">
+
+    </div>
+</div>
+</div>
 
 <!-- Main content -->
-<h1>Calculator</h1>
 
-<p>Welcome to my personal calculator</p>
-
-<p>It lacks sense, but at least it is weird
-<br>
-You just have to enter variable y. The result is the combination of a randomly
-<br>
-generated number of the intervall [5;10] with your personal input.</p>
-
-<p>Try it out and have fun!</p>
-<br>
-<p id="number"></p>
-
-<!-- Sign and date the page, it's only polite! -->
-<address>Made 12 October 2018<br>
-  by myself.</address>
-<button onclick="x_plus_y()">Click me to add random number with your input</button>
 </body>
 </html>
