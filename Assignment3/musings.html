@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="myfunctions" href="myfunctions.js">
+</head>
+<script>
+function x_plus_y() {
+  var min = 5;
+var max = 10;
+var x = Math.floor(Math.random() * (max - min)) + min;
+
+  var y = prompt ("Enter y:");
+
+  var z = (x) + (y);
+
+  var t = document.getElementById("number");
+  t.style.fontSize = "20px"
+  t.style.color="black"
+  document.getElementById("number").innerHTML = "Your personal number added to a randomly generated number is " + (z)
+}
+</script>
+<body>
+
+<!-- Site navigation menu -->
+<ul class="navbar">
+  <li><a href="musings.html">Randomgenerator</a>
+
+  <li><a href="links.html">Foresee EPIN1020 course grade</a>
+</ul>
+
+<!-- Main content -->
+<h1>Calculator</h1>
+
+<p>Welcome to my personal calculator</p>
+
+<p>It lacks sense, but at least it is weird
+<br>
+You just have to enter variable y. The result is the combination of a randomly
+<br>
+generated number of the intervall [5;10] with your personal input.</p>
+
+<p>Try it out and have fun!</p>
+<br>
+<p id="number"></p>
+
+<!-- Sign and date the page, it's only polite! -->
+<address>Made 12 October 2018<br>
+  by myself.</address>
+<button onclick="x_plus_y()">Click me to add random number with your input</button>
+</body>
+</html>
