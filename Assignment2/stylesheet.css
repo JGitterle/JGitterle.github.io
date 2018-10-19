@@ -4,7 +4,7 @@ body {
   padding-left: 11em;
   font-family: Georgia, "Times New Roman",
        Times, serif;
-  color: purple;
+  color: black;
   background-color: #F6CEF5}
   h1 {
  font-family: Helvetica, Geneva, Arial,
@@ -22,7 +22,7 @@ ul.navbar a {
 a:link {
   color: blue }
 a:visited {
-  color: purple }
+  color: black }
  ul.navbar {
    list-style-type: none;
   padding: 0;
