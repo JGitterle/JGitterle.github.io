@@ -1,0 +1,46 @@
+
+
+body {
+  padding-left: 0em;
+  font-family: Georgia, "Times New Roman",
+       Times, serif;
+  color: purple;
+  background-image: url("background_image.jpg")}
+  h1 {
+ font-family: Helvetica, Geneva, Arial,
+       SunSans-Regular, sans-serif }
+       ul.navbar li {
+  background: white;
+  margin: 0.5em 0;
+  padding: 0.3em;
+  border-right: 1em solid black }
+  ul.navbar li:hover {
+background-color: orange;
+  }
+ul.navbar a {
+  text-decoration: none }
+a:link {
+  color: blue }
+a:visited {
+  color: purple }
+ ul.navbar {
+   list-style-type: none;
+  padding: 0;
+  margin: 0;
+      position: absolute;
+      top: 2em;
+      left: 1em;
+      width: 10em }
+  div.demobox {
+    background-color: "purple";
+    position: static;
+      width: 700em;
+      height: 420em;
+    }
+  div.xy {
+    padding-left: 0em;
+  }
+
+  div.col-sm-3{
+    padding-top: 5em
+  }
